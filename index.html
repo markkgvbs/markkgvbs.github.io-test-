@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Test Page</h1>
+    <p>This is a simple page for testing HTML rendering.</p>
+    
+    <div class="test-section">
+        <h2>Basic Elements</h2>
+        <p>Paragraph text</p>
+        <p><strong>Bold text</strong> and <em>italic text</em></p>
+        <p><a href="#test">Test link</a></p>
+        <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+        </ul>
+        <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h2>Form Elements</h2>
+        <form>
+            <div>
+                <label for="text-input">Text Input:</label>
+                <input type="text" id="text-input" placeholder="Enter text">
+            </div>
+            <div>
+                <label for="select-input">Select Input:</label>
+                <select id="select-input">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Checkbox</label>
+            </div>
+            <div>
+                <button type="button">Test Button</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test Results</h2>
+        <p id="js-test">JavaScript not executed <span class="error">✗</span></p>
+        <p>CSS is working <span class="success">✓</span></p>
+    </div>
+    
+    <script>
+        // Simple JavaScript test
+        document.getElementById('js-test').innerHTML = 
+            'JavaScript executed <span class="success">✓</span>';
+    </script>
+</body>
+</html>
